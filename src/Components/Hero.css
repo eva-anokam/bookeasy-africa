@@ -1,0 +1,33 @@
+.hero-container{
+    background-color: var(--clr-accent);
+    padding-bottom: 0;
+}
+
+.hero-container .img{
+    display: none;
+}
+
+@media(min-width: 760px) {
+    
+    .hero-container .text{
+        padding-inline: 2rem;
+       
+    }
+    
+}
+
+@media (min-width: 960px) {
+
+    .hero-container{
+        background-image: url("../assets/hero.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .hero-container .text{
+         max-width: 40%;
+    }
+
+    .hero-main{
+        position: relative;
+    }
+}

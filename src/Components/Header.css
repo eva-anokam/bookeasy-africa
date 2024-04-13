@@ -1,0 +1,123 @@
+header{
+    --horizontal-alignment: space-between;
+}
+.nav{
+    display: none;
+}
+header .bar{
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--clr-primary);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#menu-bar{
+    display: none;
+    
+}
+
+header .bar2{
+    width: 30px;
+}
+
+header .bar3{
+    width:20px;
+}
+
+#menu-bar:checked ~ label .icon-container .bar1{
+     transform: translateY(25px) rotate(-45deg);
+}
+
+#menu-bar:checked ~ label .icon-container .bar2{
+     opacity: 0;
+}
+
+#menu-bar:checked ~ label .icon-container .bar3{
+    transform:translateY(-5px) rotate(47deg);
+    width: 40px;
+}
+
+.menu-icons  #menu-bar:checked ~ .nav{
+    display: block;
+    background-color: var(--clr-primary);
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    text-align: center;
+    height: 100vh;
+    font-size: var(--font-size-sm);
+    padding-top: 4rem;
+    transition: all 2s linear;
+    
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.nav-list a{
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+    font-size: 1.1rem;
+}
+
+.nav-list a:hover, .nav-list a:focus{
+    background-color: white;
+    color: var(--clr-primary);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media (min-width: 760px) {
+    .btn-container{
+        display: none;
+    }
+    .bar{
+        display: none;
+    }
+    #nav{
+        display: flex;
+        align-items: center;
+    }
+    #nav .nav-list a{
+        color: black;
+        font-weight: var(--fw-bold);
+    }
+    #nav .nav-list{
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #nav .nav-list a:hover, #nav .nav-list a:focus{
+        background-color: var(--clr-primary);
+        color: white;
+    }
+}
+
+@media (min-width: 960px) {
+    header{
+        --horizontal-alignment: space-between;
+        align-items: center;
+        
+    }
+    #nav{
+        align-items: center;
+        gap: 2rem;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+}

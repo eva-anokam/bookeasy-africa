@@ -1,0 +1,51 @@
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-inline: 2rem;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+  padding: 15px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--btn-clr, var(--clr-primary));
+  background-color: var(--btn-bg-clr, white);
+  transition: all .3s;
+ 
+}
+
+.button:hover, .button:focus{
+    transform: scale(1.12);
+    background-color: var(--clr-logo);
+    color: white;
+}
+
+.btn-secondary{
+    border: 2px solid white;
+    background-color: transparent;
+    --btn-clr: white;
+}
+
+.btn-tertiary{
+    --btn-bg-clr: #84B7E1;
+    --btn-clr: white;
+}
+
+@media (min-width: 760px) {
+    .button{
+        padding-block: 10px;
+    }
+  .btn-primary {
+    --btn-bg-clr: var(--clr-primary);
+    --btn-clr: white;
+  }
+
+  .btn-secondary {
+    border: 3px solid var(--clr-primary);
+    --btn-clr: var(--clr-primary);
+    --btn-bg-clr: transparent;
+  }
+}

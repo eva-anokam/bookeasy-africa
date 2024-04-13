@@ -1,0 +1,55 @@
+:root{
+    --clr-primary: #1E517B;
+    --clr-logo: #286CA4;
+    --clr-accent: #D6E7F5;
+
+
+    --ff-primary: "Open Sans", sans-serif;
+
+    --fw-bold: 700;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-primary) ;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+h2{
+    margin: 0;
+}
+/* Utility classes */
+.container{
+    width: min(90%, 70rem);
+    margin-inline: auto;
+    padding-block: var(--container-padding, 2rem);
+}
+.section{
+    padding-block: 6rem;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: var(--horizontal-alignment, none);
+    gap: var(--flex-gap, .5rem);
+}
+
+.flow-content > * + * {
+    margin-top: 1rem;
+}
+
+ h2{
+    text-align: center;
+    color: var(--clr-primary);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}

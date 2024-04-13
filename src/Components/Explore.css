@@ -1,0 +1,22 @@
+.explore{
+    background-image: url("../assets/explore.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.explore h2{
+    font-size: 1.75rem;
+    max-width: 40rem;
+    margin-inline: auto;
+    color: white;
+}
+
+@media (min-width: 760px) {
+    .explore h2{
+        font-size: 2rem;
+    }
+}
+

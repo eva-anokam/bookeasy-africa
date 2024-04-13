@@ -1,0 +1,12 @@
+.logo-container{
+    cursor: pointer;
+}
+.logo-text{
+    color: var(--clr-logo);
+    font-weight: var(--fw-bold);
+}
+
+.logo-white{
+    color: white;
+    font-weight: var(--fw-bold);
+}

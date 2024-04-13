@@ -1,0 +1,47 @@
+.cta-position .cta{
+    background-color: white;
+    color: var(--clr-primary);
+    --horizontal-alignment: center;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    border-radius: 5px;
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    width: min(90%, 70rem);
+    margin-inline: auto;
+}
+
+.cta-text{
+    gap: .5rem;
+    
+}
+
+.cta .main{
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+     text-align: center;
+}
+
+.cta .sub span{
+    display: block;
+}
+
+@media(min-width: 760px) {
+    .cta-position .cta{
+        --horizontal-alignment: space-between;
+    }
+}
+
+@media (min-width: 960px) {
+    .cta-position{
+        width: 100%;
+        position: absolute;
+        top: 55%;
+        transform: translate(0%, -50%);
+    }
+
+    .cta-position .cta{
+        align-items: flex-start;
+    }
+    
+}
