@@ -15,7 +15,7 @@ export default function Hero() {
                 offer secure bookings, transparent prices (no hidden fees!), and
                 easy searching - all on your phone!
               </p>
-              <Button variant="primary" href="">
+              <Button variant="primary" href="#">
                 Get Started &#8594;
               </Button>
             </div>
