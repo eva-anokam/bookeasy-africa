@@ -34,14 +34,16 @@
     --btn-clr: white;
 }
 
+.btn-primary {
+    --btn-bg-clr: var(--clr-primary);
+    --btn-clr: white;
+  }
+
 @media (min-width: 760px) {
     .button{
         padding-block: 10px;
     }
-  .btn-primary {
-    --btn-bg-clr: var(--clr-primary);
-    --btn-clr: white;
-  }
+  
 
   .btn-secondary {
     border: 3px solid var(--clr-primary);

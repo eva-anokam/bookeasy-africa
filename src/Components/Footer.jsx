@@ -6,7 +6,7 @@ import "./Footer.css"
 export default function Footer() {
   return (
     <footer>
-      <div className="">
+      <div className="footer-container">
         <div className="footer-top container">
           <div>
             <Logo />
